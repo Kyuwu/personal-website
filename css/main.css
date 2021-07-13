@@ -37,17 +37,39 @@ nav {
     text-align: center !important;
 }
 
+.page-center-content {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center !important;
+}
+
+.page-center-content ul {
+    width: 100%;
+    transition: all .5s ease;
+
+}
+
+.dropdown-item {
+    width: 100%;
+    font-weight: bolder !important;
+    text-align: center !important;
+    transition: all .5s ease;
+}
+
 .home {
     animation: bounceInUp;
     animation-duration: 2s;
 }
 
 .social-item {
-    color: #C97777;
+    color: #B9495D;
 }
 
 .social-item:hover {
-    color: #C75454;
+    color: #d84862;
 }
 
 /* Cards */
@@ -77,35 +99,86 @@ nav {
     left: 0
 }
 
-/* Animation Adjustmsnt */
+/* Misc */
+.circle-border {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 0.2rem solid #FFFFFF;
+    /* -webkit-animation-name: cardColor;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s; */
+}
+
+.project-circle {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 0.1rem solid #FFFFFF;
+}
+
+/* icons */
+
+.osu {
+    background: url('../media/osu.png') no-repeat top left;
+    height: 22px;
+    width: 22px;
+}
+
+/* Animation Adjustments */
+
+@-webkit-keyframes cardColor {
+    0% {
+        border: 0.2rem solid #FFFFFF;
+    }
+
+    50% {
+        border: 0.2rem solid #FFFFFF;
+    }
+
+    51% {
+        border: 0.2rem solid #000000;
+    }
+
+    100% {
+        border: 0.2rem solid #000000;
+    }
+}
+
+
 @-webkit-keyframes bounceInUp {
-    from, 60%, 75%, 90%, to {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
-  
+
     from {
         opacity: 0;
         -webkit-transform: translate3d(-50%, 2000%, 0) scaleY(5);
         transform: translate3d(-50%, 2000%, 0) scaleY(5);
     }
-  
+
     60% {
         opacity: 1;
         -webkit-transform: translate3d(-50%, -60%, 0) scaleY(0.9);
         transform: translate3d(-50%, -60%, 0) scaleY(0.9);
     }
-  
+
     75% {
         -webkit-transform: translate3d(-50%, -45%, 0) scaleY(0.95);
         transform: translate3d(-50%, -45%, 0) scaleY(0.95);
     }
-  
+
     90% {
         -webkit-transform: translate3d(-50%, -52.5%, 0) scaleY(0.985);
         transform: translate3d(-50%, -52.5%, 0) scaleY(0.985);
     }
-  
+
     to {
         -webkit-transform: translate3d(-50%, -50%, 0);
         transform: translate3d(-50%, -50%, 0);
@@ -113,50 +186,40 @@ nav {
 }
 
 @keyframes bounceInUp {
-    from, 60%, 75%, 90%, to {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
-  
+
     from {
         opacity: 0;
         -webkit-transform: translate3d(-50%, 2000%, 0) scaleY(5);
         transform: translate3d(-50%, 2000%, 0) scaleY(5);
     }
-  
+
     60% {
         opacity: 1;
         -webkit-transform: translate3d(-50%, -60%, 0) scaleY(0.9);
         transform: translate3d(-50%, -60%, 0) scaleY(0.9);
     }
-  
+
     75% {
         -webkit-transform: translate3d(-50%, -45%, 0) scaleY(0.95);
         transform: translate3d(-50%, -45%, 0) scaleY(0.95);
     }
-  
+
     90% {
         -webkit-transform: translate3d(-50%, -52.5%, 0) scaleY(0.985);
         transform: translate3d(-50%, -52.5%, 0) scaleY(0.985);
     }
-  
+
     to {
         -webkit-transform: translate3d(-50%, -50%, 0);
         transform: translate3d(-50%, -50%, 0);
     }
-}
-
-/* Misc */
-.circle-border {
-    border-radius: 50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    border: 0.2rem solid #FFFFFF;
-}
-
-.project-circle {
-    border-radius: 50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    border: 0.1rem solid #FFFFFF;
 }
