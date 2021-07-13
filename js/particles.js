@@ -15,13 +15,13 @@ var pJS = function (e, t) {
         }
       },
       color: {
-        value: "#fff"
+        value: "#B9495D"
       },
       shape: {
         type: "circle",
         stroke: {
           width: 0,
-          color: "#ff0000"
+          color: "#B9495D"
         },
         polygon: {
           nb_sides: 5
@@ -33,7 +33,7 @@ var pJS = function (e, t) {
         }
       },
       opacity: {
-        value: 1,
+        value: 0.2,
         random: !1,
         anim: {
           enable: !1,
@@ -43,7 +43,7 @@ var pJS = function (e, t) {
         }
       },
       size: {
-        value: 20,
+        value: 2,
         random: !1,
         anim: {
           enable: !1,
@@ -55,7 +55,7 @@ var pJS = function (e, t) {
       line_linked: {
         enable: !0,
         distance: 100,
-        color: "#fff",
+        color: "#B9495D",
         opacity: 1,
         width: 1
       },
