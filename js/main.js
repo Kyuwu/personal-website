@@ -1,3 +1,4 @@
+//typed settings
 var typed = new Typed('.typed', {
     strings: ["&nbsp;Software Engineer", "&nbsp;Nekopara Enthousiast", "&nbsp;Circle Clicker"],
     typeSpeed: 50,
