@@ -8,3 +8,10 @@ var typed = new Typed('.typed', {
     loop: true,
     showCursor: true
 });
+
+var keys = '';
+window.addEventListener('keypress', function (e) {
+    keys += `${e.charCode}+`;
+    console.log(keys);
+    if (keys == '107+121+117+119+117+') window.location.replace('https://youtu.be/dQw4w9WgXcQ');
+});

@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Kyuwu</title>
-  <meta name="description" content="Personal website made for fun and stuff i guess, also uploaded my selfmade osu skins to it">
+  <meta name="description"
+    content="Personal website made for fun and stuff i guess, also uploaded my selfmade osu skins to it">
   <meta name="author" content="Thijmen Hogenkamop" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="./css/main.css">
+  <link rel="stylesheet" media="screen" href="./css/menu.css">
   <link rel="stylesheet" media="screen" href="./css/bootstrap.css">
   <link rel="icon" href="./media/roundchoco.ico">
 </head>
@@ -18,28 +20,37 @@
   <div id="particles-js"></div>
   <main class="content">
     <div class="container">
-      
+
       <div class="page-center home">
         <img src="./media/chocola.png" class="circle-border align-top" width="128">
         <h2 class="text-white">Kyuwu</h2>
         <!-- typed.js -->
         <h5 class="text-white"><span class="typed"></span></h5>
         <h6>
-          <a class="btn btn-outline-light btn-sm" href="/about"><i class="far fa-question-circle"></i> About</a>
-          <a class="btn btn-outline-light btn-sm" id="drop" data-toggle="dropdown" href="skins.html"><i class="fas fa-book"></i> Osu Skins</a>
-          <a class="btn btn-outline-light btn-sm" href=""><i class="far fa-question-circle"></i> Miscellaneous</a>
-          <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="drop">
-            <li><a class="dropdown-item" href="skins/-❤ CHOCOLA CULT ❤-.osk">Chocola skin</a></li>
-            <li><a class="dropdown-item" href="skins/-❤ VANILLA CULT ❤-.osk">Vanilla skin</a></li>
-          </ul>
+          <nav>
+            <ul id="main">
+              <li><a href="/about">About</a></li>
+              <li>
+                <a href="#0">Osu! Skins </a>
+                <ul class="drop">
+                  <div>
+                    <li><a href="skins/-❤ CHOCOLA CULT ❤-.osk">Chocola skin</a></li>
+                    <li><a href="skins/-❤ VANILLA CULT ❤-.osk">Vanilla skin</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li><a href="/contact">Contact</a></li>
+              <div id="marker"></div>
+            </ul>
+          </nav>
         </h6>
-        <h5 class="socials">
+        <!-- <h5 class="socials">
           <a class="social-item" href="https://discord.gg/p9dMe4s4Ky"><i class="fab fa-discord"></i></a>
           <a class="social-item" href="https://www.twitch.tv/kyuwu"><i class="fab fa-twitch"></i></a>
-          <!-- <a class="social-item" href="https://osu.ppy.sh/users/Kyuwu"><i class="fab osu"></i></a> -->
+          <a class="social-item" href="https://osu.ppy.sh/users/Kyuwu"><i class="fab osu"></i></a>
           <a class="social-item" href="https://www.youtube.com/channel/UCMimQKx5OkEvSSDT7EMKXgg"><i class="fab fa-youtube"></i></a>
           <a class="social-item" href="https://github.com/Kyuwu"><i class="fab fa-github"></i></a>
-        </h5>       
+        </h5>        -->
       </div>
     </div>
   </main>

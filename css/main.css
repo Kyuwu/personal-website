@@ -18,29 +18,21 @@ body {
 
 .content {
     flex: 1;
+    position: relative;
 }
 
 /* Navbar */
-nav {
+/* nav {
     margin-bottom: 25px;
     background-color: #332C2CD0;
     backdrop-filter: blur(5px);
-}
+} */
 
 /* Content */
 .page-center {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center !important;
-}
-
-.page-center-content {
-    position: absolute;
-    left: 50%;
-    top: 65%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center !important;
