@@ -68,17 +68,34 @@ body {
 .card-about {
     position: relative;
     display: flex;
+    opacity: 0.8;
     flex-direction: column;
-    background-color: transparent;
+    background: #47232a;
     backdrop-filter: blur(10px);
     background-clip: border-box;
-    border: 1px solid #FFFFFF;
     border-radius: .2rem;
+    /* border-bottom: 6px solid #B9495D; */
     padding: 1rem;
+}
+
+.choco-btn {
+    width: 100%;
+    background-color: #B9495D;
+    text-decoration: none;
+    opacity: 0.8;
+    color: white;
+}
+.choco-btn:hover {
+    width: 100%;
+    background-color: #B9495D;
+    text-decoration: none;
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
 }
 
 .card-text {
     color: #FFFFFF;
+    font-weight: bold;
 }
 
 /* Particles */

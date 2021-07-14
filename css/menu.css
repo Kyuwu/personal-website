@@ -11,6 +11,7 @@ body {
 
 #main {
     position: relative;
+    opacity: 0.8;
     list-style: none;
     background: #47232a;
     font-weight: 400;
