@@ -73,7 +73,7 @@ nav {
 }
 
 /* Cards */
-.card {
+.card-about {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -116,6 +116,8 @@ nav {
     -webkit-border-radius: 50%;
     border: 0.1rem solid #FFFFFF;
 }
+
+
 
 /* icons */
 
