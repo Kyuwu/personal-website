@@ -27,7 +27,7 @@ body {
     display: inline-block;
     position: relative;
     cursor: pointer;
-    /* z-index: 5; */
+    z-index: 5;
     min-width: 120px;
 }
 
@@ -46,6 +46,19 @@ li {
 }
 
 .drop {
+    display: none;
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 48px;
+    z-index: 60;
+}
+
+.drop:hover {
+    display: block;
     overflow: hidden;
     list-style: none;
     position: absolute;
