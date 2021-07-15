@@ -26,13 +26,16 @@ body {
     font-size: 0.8rem;
     display: inline-block;
     position: relative;
-    padding: 15px 20px;
     cursor: pointer;
-    z-index: 5;
+    /* z-index: 5; */
     min-width: 120px;
 }
 
 #main a {
+    height: 100%;
+    width: 100%;
+    padding: 15px 20px;
+    display: block;
     color: white !important;
     font-weight: bold;
     text-decoration: none;
@@ -50,6 +53,7 @@ li {
     width: 100%;
     left: 0;
     top: 48px;
+    z-index: 60;
 }
 
 .drop div {
@@ -139,3 +143,9 @@ li {
     -ms-transform: translate(360px, 0);
     transform: translate(360px, 0);
 }
+
+@media only screen and (max-width: 727px) {
+    #marker {
+        display: none;
+    }
+  }
